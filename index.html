@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мои ссылки по категориям</title>
-    <!-- Font Awesome 6 (free) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -55,16 +54,12 @@
             border-bottom: 2px dashed #b8cfE3;
             padding-bottom: 1rem;
         }
-
-        /* сетка категорий */
         .categories-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem 1.8rem;
             margin-bottom: 2rem;
         }
-
-        /* карточка категории */
         .category {
             background: rgba(255, 255, 255, 0.3);
             border-radius: 2rem;
@@ -110,12 +105,10 @@
             flex-direction: column;
             gap: 0.9rem;
         }
-
-        /* стиль карточки‑ссылки (почти как раньше, но адаптирован под вертикаль) */
         .link-card {
             display: flex;
             align-items: center;
-            justify-content: flex-start;  /* текст после иконки */
+            justify-content: flex-start;
             background: #ffffffdd;
             backdrop-filter: blur(4px);
             border-radius: 50px;
@@ -142,13 +135,11 @@
             color: #2c577c;
             flex-shrink: 0;
         }
-
-        /* индивидуальные оттенки иконок */
         .link-card .fa-telegram { color: #2A8BD2; }
         .link-card .fa-envelope { color: #D94A3D; }
         .link-card .fa-behance { color: #1769FF; }
-        .link-card .fa-bolt { color: #000000; } /* Vercel */
-        .link-card .fa-building { color: #d1442c; } /* hh.ru */
+        .link-card .fa-bolt { color: #000000; } 
+        .link-card .fa-building { color: #d1442c; } 
         .link-card .fa-github { color: #24292e; }
 
         .link-card:hover {
@@ -177,8 +168,6 @@
             border-top: 1px dashed #b6cfdf;
             padding-top: 1.5rem;
         }
-
-        /* Адаптивность */
         @media (max-width: 850px) {
             .categories-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -202,79 +191,62 @@
             .link-card {
                 padding: 0.7rem 1rem;
                 font-size: 1rem;
-                white-space: normal;   /* допускаем перенос, но у нас короткие */
+                white-space: normal;
             }
         }
     </style>
 </head>
 <body>
     <div class="links-container">
-        <h1>🔗 ссылки по категориям</h1>
-        <div class="subhead">все важные места в одном месте</div>
-
-        <!-- Категории с названиями в скобках (Telegram, Mail и т.д.) -->
-        <div class="categories-grid">
-            <!-- Категория: Контакты -->
+        <h1>Мои полезные ссылки</h1>
+        <div class="categories-grid">  
             <div class="category">
                 <div class="category-title">
-                    Контакты <span>(Telegram, Mail)</span>
+                    Контакты <span></span>
                 </div>
                 <div class="category-links">
-                    <!-- Telegram -->
                     <a href="#" target="_blank" rel="noopener" class="link-card">
                         <i class="fab fa-telegram"></i>
-                        <span>Telegram</span>
+                        <span>@Offaytomori</span>
                     </a>
-                    <!-- Mail (контакты) -->
-                    <a href="mailto:hello@example.com" class="link-card">
+                   
+                    <a href="mailto:depressionx9@vk.com" class="link-card">
                         <i class="fas fa-envelope"></i>
-                        <span>Mail</span>
+                        <span>Vk.mail</span>
                     </a>
                 </div>
             </div>
-
-            <!-- Категория: Работы -->
             <div class="category">
                 <div class="category-title">
-                    Работы <span>(Behance, Vercel)</span>
+                    Работы <span></span>
                 </div>
                 <div class="category-links">
-                    <!-- Behance -->
-                    <a href="#" target="_blank" rel="noopener" class="link-card">
+                    <a href="https://www.behance.net/16b29ceb" target="_blank" rel="noopener" class="link-card">
                         <i class="fab fa-behance"></i>
                         <span>Behance</span>
                     </a>
-                    <!-- Vercel (портфолио) -->
                     <a href="#" target="_blank" rel="noopener" class="link-card">
                         <i class="fas fa-bolt"></i>
-                        <span>Vercel · portfolio</span>
+                        <span>Vercel</span>
                     </a>
                 </div>
             </div>
-
-            <!-- Категория: Другое -->
             <div class="category">
                 <div class="category-title">
-                    Другое <span>(hh, GitHub)</span>
+                    Другое <span></span>
                 </div>
                 <div class="category-links">
-                    <!-- HeadHunter -->
-                    <a href="#" target="_blank" rel="noopener" class="link-card">
+                    <a href="https://yaroslavl.hh.ru/resume/73045f3bff0fe6feba0039ed1f316635503741" target="_blank" rel="noopener" class="link-card">
                         <i class="fas fa-building"></i>
                         <span>HeadHunter</span>
                     </a>
-                    <!-- GitHub -->
-                    <a href="#" target="_blank" rel="noopener" class="link-card">
+                    <a href="https://github.com/Aytomori" target="_blank" rel="noopener" class="link-card">
                         <i class="fab fa-github"></i>
                         <span>GitHub</span>
                     </a>
                 </div>
             </div>
         </div>
-
-        <footer>
-            ✦ наведи — увидишь магию ✦ замени # на свои настоящие ссылки ✦
-        </footer>
     </div>
 </body>
 </html>
