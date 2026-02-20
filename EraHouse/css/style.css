@@ -191,7 +191,7 @@ address {
 }
 
 .contact__link-nav {
-    background: url(/images/mingcute_phone-fill.svg) left center no-repeat;
+    background: url(../images/mingcute_phone-fill.svg) left center no-repeat;
     padding-left: 25px;
     font-size: 20px;
     font-weight: bold;
@@ -249,7 +249,7 @@ address {
 
 .section__hero {
     padding: 135px 0 135px 40px;
-    background: var(--clr-grey) url(/images/heroimg.png) right center no-repeat;
+    background: var(--clr-grey) url(../images/heroimg.png) right center no-repeat;
     border-radius: 30px;
 }
 
@@ -886,4 +886,5 @@ address {
     padding: 12px 60px 12px 12px;
     font-size: 18px;
   }
+
 }
