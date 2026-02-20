@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мои ссылки по категориям</title>
+    <title>Мои ссылки — вертикально</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -21,9 +21,8 @@
             align-items: center;
             padding: 2rem 1rem;
         }
-
         .links-container {
-            max-width: 1100px;
+            max-width: 700px;
             width: 100%;
             background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(8px);
@@ -48,18 +47,19 @@
         .subhead {
             text-align: center;
             color: #2a4d6e;
-            margin-bottom: 2.8rem;
+            margin-bottom: 2rem;
             font-weight: 400;
             font-size: 1.15rem;
-            border-bottom: 2px dashed #b8cfE3;
+            border-bottom: 2px dashed #b8cfe3;
             padding-bottom: 1rem;
         }
         .categories-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem 1.8rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
             margin-bottom: 2rem;
         }
+
         .category {
             background: rgba(255, 255, 255, 0.3);
             border-radius: 2rem;
@@ -105,6 +105,7 @@
             flex-direction: column;
             gap: 0.9rem;
         }
+
         .link-card {
             display: flex;
             align-items: center;
@@ -135,6 +136,7 @@
             color: #2c577c;
             flex-shrink: 0;
         }
+
         .link-card .fa-telegram { color: #2A8BD2; }
         .link-card .fa-envelope { color: #D94A3D; }
         .link-card .fa-behance { color: #1769FF; }
@@ -168,25 +170,12 @@
             border-top: 1px dashed #b6cfdf;
             padding-top: 1.5rem;
         }
-        @media (max-width: 850px) {
-            .categories-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
+        @media (max-width: 450px) {
             .links-container {
-                padding: 2rem 1.5rem;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-        }
-
-        @media (max-width: 550px) {
-            .categories-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
+                padding: 1.8rem 1.2rem;
             }
             .category-title {
-                font-size: 1.6rem;
+                font-size: 1.5rem;
             }
             .link-card {
                 padding: 0.7rem 1rem;
@@ -198,18 +187,17 @@
 </head>
 <body>
     <div class="links-container">
-        <h1>Мои полезные ссылки</h1>
+        <h1>Aytomori полезные ссылки</h1>
         <div class="categories-grid">  
             <div class="category">
                 <div class="category-title">
-                    Контакты <span></span>
+                    Контакты <span>telegram, mail</span>
                 </div>
                 <div class="category-links">
                     <a href="https://t.me/Offaytomori" target="_blank" rel="noopener" class="link-card">
                         <i class="fab fa-telegram"></i>
                         <span>@Offaytomori</span>
                     </a>
-                   
                     <a href="mailto:depressionx9@vk.com" class="link-card">
                         <i class="fas fa-envelope"></i>
                         <span>Vk.mail</span>
@@ -218,7 +206,7 @@
             </div>
             <div class="category">
                 <div class="category-title">
-                    Работы <span></span>
+                    Работы <span>behance, vercel</span>
                 </div>
                 <div class="category-links">
                     <a href="https://www.behance.net/16b29ceb" target="_blank" rel="noopener" class="link-card">
@@ -233,7 +221,7 @@
             </div>
             <div class="category">
                 <div class="category-title">
-                    Другое <span></span>
+                    Другое <span>hh, github</span>
                 </div>
                 <div class="category-links">
                     <a href="https://yaroslavl.hh.ru/resume/73045f3bff0fe6feba0039ed1f316635503741" target="_blank" rel="noopener" class="link-card">
